@@ -19,13 +19,17 @@ target 'webviewapp' do
 
   use_react_native!(
     :path => config[:reactNativePath],
+     :hermes_enabled => true,
     # An absolute path to your application root.
     :app_path => "#{Pod::Config.instance.installation_root}/.."
   )
 
-  target 'webviewappTests' do
+  target 'RNClip' do
     inherit! :complete
-    # Pods for testing
+      use_react_native!(
+      :path => config[:reactNativePath],
+      :hermes_enabled => true,
+    )
   end
 
   post_install do |installer|
