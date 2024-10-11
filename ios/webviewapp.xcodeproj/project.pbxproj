@@ -70,6 +70,7 @@
 		B943C45ED15AA4B47D3F636A /* Pods-webviewapp-RNClip.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-webviewapp-RNClip.release.xcconfig"; path = "Target Support Files/Pods-webviewapp-RNClip/Pods-webviewapp-RNClip.release.xcconfig"; sourceTree = "<group>"; };
 		D57FCF789BF455A16D985524 /* Pods-webviewapp-RNClip.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-webviewapp-RNClip.debug.xcconfig"; path = "Target Support Files/Pods-webviewapp-RNClip/Pods-webviewapp-RNClip.debug.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		EF89AECA2C99B71500BCAAE9 /* webviewapp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = webviewapp.entitlements; path = webviewapp/webviewapp.entitlements; sourceTree = "<group>"; };
 		F399E6F02C9941920028D0F5 /* RNClip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RNClip.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F399E6F22C9941920028D0F5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F399E6F32C9941920028D0F5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -125,6 +126,7 @@
 		13B07FAE1A68108700A75B9A /* webviewapp */ = {
 			isa = PBXGroup;
 			children = (
+				EF89AECA2C99B71500BCAAE9 /* webviewapp.entitlements */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.mm */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
@@ -542,6 +544,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = webviewapp/webviewapp.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 82;
 				DEVELOPMENT_TEAM = C248P2BQTL;
 				ENABLE_BITCODE = NO;
@@ -558,8 +563,9 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.perk.deeplinks;
+				PRODUCT_BUNDLE_IDENTIFIER = comFamilyOneApp;
 				PRODUCT_NAME = webviewapp;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -572,6 +578,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = webviewapp/webviewapp.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 82;
 				DEVELOPMENT_TEAM = C248P2BQTL;
 				INFOPLIST_FILE = webviewapp/Info.plist;
@@ -587,8 +596,9 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.perk.deeplinks;
+				PRODUCT_BUNDLE_IDENTIFIER = comFamilyOneApp;
 				PRODUCT_NAME = webviewapp;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -800,7 +810,7 @@
 				MARKETING_VERSION = 1.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.perk.deeplinks.Clip;
+				PRODUCT_BUNDLE_IDENTIFIER = comFamilyOneApp.Clip;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -852,7 +862,7 @@
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MARKETING_VERSION = 1.0;
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.perk.deeplinks.Clip;
+				PRODUCT_BUNDLE_IDENTIFIER = comFamilyOneApp.Clip;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = 1;
